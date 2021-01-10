@@ -1,0 +1,4 @@
+export const CREATE_BALANCE = 'CREATE_BALANCE'
+export const GET_BALANCE = 'GET_BALANCE'
+export const EDIT_BALANCE = 'EDIT_BALANCE'
+export const DELETE_BALANCE = 'DELETE_BALANCE'
