@@ -44,6 +44,7 @@ nextApp.prepare().then(() => {
 
   app.use(morgan('dev'))
   app.use(express.urlencoded({ extended: true }))
+  app.use(express.json())
   app.use(compression())
   app.use(session(sessionConfig))
 

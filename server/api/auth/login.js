@@ -17,7 +17,7 @@ const login = async (req, res, next) => {
       req.login(user, (error) =>
         error
           ? next(error)
-          : req.status(200).json(stripSensitiveInfoFromUser(user))
+          : res.status(200).json(stripSensitiveInfoFromUser(user))
       )
     } else {
       res.status(401).send('Incorrect password')

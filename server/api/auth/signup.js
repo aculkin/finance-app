@@ -3,11 +3,10 @@ const { stripSensitiveInfoFromUser } = require('../utility')
 
 const signup = async (req, res, next) => {
   try {
-    const { email, password, phone, firstName, lastName } = req.body
+    const { email, password, firstName, lastName } = req.body
     const user = await User.create({
       email,
       password,
-      phone,
       firstName,
       lastName,
     })

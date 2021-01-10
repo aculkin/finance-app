@@ -1,3 +1,4 @@
-const { isLoggedIn } = isLoggedIn
+const isLoggedIn = require('./isLoggedIn')
+const stripSensitiveInfoFromUser = require('./stripSensitiveInfoFromUser')
 
-module.exports = { isLoggedIn }
+module.exports = { isLoggedIn, stripSensitiveInfoFromUser }
